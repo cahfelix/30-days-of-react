@@ -1,0 +1,168 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+
+}
+.notificationsFrame {
+    z-index: 1;
+    width: 100%;
+    /*top: 20px;*/
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,.3);
+    font-family: Open Sans,Helvetica,sans-serif;
+    position: relative
+}
+
+.item {  
+    position: relative;
+    z-index: 1;
+    margin: 20px 30px 30px 70px;
+    display: block;
+}
+
+.item p {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 40px 0 0;
+    font-family: Open Sans,Lora,Times,no-serif;
+}
+
+.avatar {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    left: -49px;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #ecf0f1;
+    position: relative;
+}
+
+.time { 
+    display: block;
+    font-size: 11px;
+    line-height: 11px;
+    margin-bottom: 2px;
+}
+
+.notificationsFrame .content .item .commentCount {
+    position: absolute;
+    right: 15px;
+    font-size: 12px;
+    top: 11px;
+}
+
+.notificationsFrame .content .item .commentCount:after {
+    content: "\F075";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 20px;
+    color: #ebebeb;
+    top: -50%;
+    left: 100%;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.notificationsFrame .content .line {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    bottom: 0;
+    width: 3px;
+    background: #ebebeb;
+}
+
+.header {
+    position: relative;
+    height: 60px;
+    background: #5f98cd;
+    z-index: 2;
+}
+
+.header span {
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.searchInput {
+    
+}
+
+.notificationsFrame .header .fa-more {
+    position: absolute;
+    z-index: 2;
+    font-size: 21px;
+    color: #fff;
+    top: 18px;
+    right: 20px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.searchIcon {
+    position: absolute;
+    z-index: 2;
+    font-size: 21px;
+    color: #fff;
+    top: 18px;
+    right: 20px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.searchInput {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    pointer-events: all;
+    box-sizing: border-box;
+    position: absolute;
+    top: 13px;
+    right: 55px;
+    width: 200px;
+    height: 34px;
+    border-radius: 17px;
+    border: none;
+    background: #fff;
+    padding: 0 17px;
+    font-size: 13px;
+    color: #666;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchInput.active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ._3HNXe .item */
+/* . jXBv_ .time  */
+/* ._196u_ .content */
+/* ._2j72I .notificationsFrame */
+/* ._m0ed4 .line */
+/* ._KN4Ab .header */
+/* ._3P45Z fa-more */
